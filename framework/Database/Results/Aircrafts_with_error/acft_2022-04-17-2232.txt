@@ -1,0 +1,12 @@
+======== Aircraft parameters ========
+
+
+ ----- Aircraft parameters ----- 
+[[16 22  1]
+ [12  5  4]
+ [ 8 11 14]
+ [21 13 24]
+ [ 8 27  1]]
+
+ ----- Error message ----- 
+<class 'FileNotFoundError'>

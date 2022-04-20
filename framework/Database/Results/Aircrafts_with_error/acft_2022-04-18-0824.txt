@@ -1,0 +1,8 @@
+======== Aircraft parameters ========
+
+
+ ----- Aircraft parameters ----- 
+[6, 7, 5]
+
+ ----- Error message ----- 
+<class 'AttributeError'>

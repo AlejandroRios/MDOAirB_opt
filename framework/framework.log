@@ -1,0 +1,49 @@
+2022-04-20 09:27:21,136 - c:\users\aarc8\documents\github\mdoairb_base\framework\Network\network_optimization     - INFO - ==== Start network optimization module ====
+
+22022-04-20 09:27:21,133 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - Aircraft passed sizing and checks status: 0
+2022-04-20 09:27:21,133 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - ---- Start DOC matrix calculation ----
+2022-04-20 09:27:21,134 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< DOC matrix generation
+Traceback (most recent call last):
+  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 160, in objective_function0
+    ][airports_keys[k]], SAR[airports_keys[i]][airports_keys[k]] = mission(vehicle, airport_departure, takeoff_runway, airport_destination, landing_runway, mission_range)
+TypeError: mission() takes 4 positional arguments but 6 were given
+2022-04-20 09:27:21,136 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - Aircraft DOC matrix: {'FRA': {'FRA': 0, 'LHR': 0}}
+2022-04-20 09:27:21,136 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - ---- Start Network Optimization ----
+2022-04-20 09:27:21,136 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< network_optimization
+Traceback (most recent call last):
+  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 193, in objective_function0
+    computation_mode, list(airports.keys()), distances, demands, DOC_ik, vehicle)
+  File "c:\users\aarc8\documents\github\mdoairb_base\framework\Network\network_optimization.py", line 119, in network_optimization
+    docs_list.append(doc0[airports_keys[i]][airports_keys[j]])
+KeyError: 'CDG'
+2022-04-20 09:27:21,138 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - Network profit [$USD]: 0
+2022-04-20 09:27:21,143 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< writting dataframes
+Traceback (most recent call last):
+  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 245, in objective_function0
+    kpi_df3['mach'] = mach_df['mach'].values
+  File "C:\Users\aarc8\anaconda3\envs\MDOAirB_base\lib\site-packages\pandas\core\frame.py", line 3044, in __setitem__
+    self._set_item(key, value)
+  File "C:\Users\aarc8\anaconda3\envs\MDOAirB_base\lib\site-packages\pandas\core\frame.py", line 3120, in _set_item
+    value = self._sanitize_column(key, value)
+  File "C:\Users\aarc8\anaconda3\envs\MDOAirB_base\lib\site-packages\pandas\core\frame.py", line 3768, in _sanitize_column
+    value = sanitize_index(value, self.index)
+  File "C:\Users\aarc8\anaconda3\envs\MDOAirB_base\lib\site-packages\pandas\core\internals\construction.py", line 748, in sanitize_index
+    "Length of values "
+ValueError: Length of values (2) does not match length of index (225)
+2022-04-20 09:27:24,264 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< write_optimal_results
+Traceback (most recent call last):
+  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 293, in objective_function0
+    )), distances, demands, profit, DOC_ik, vehicle, kpi_df2, airplanes_ik)
+UnboundLocalError: local variable 'kpi_df2' referenced before assignment
+2022-04-20 09:27:24,265 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< write_kml_results
+Traceback (most recent call last):
+  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 299, in objective_function0
+    write_kml_results(airports, profit, airplanes_ik)
+UnboundLocalError: local variable 'airplanes_ik' referenced before assignment
+2022-04-20 09:27:24,266 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< write_newtork_results
+Traceback (most recent call last):
+  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 305, in objective_function0
+    write_newtork_results(profit, kpi_df1, kpi_df2)
+UnboundLocalError: local variable 'kpi_df1' referenced before assignment
+2022-04-20 09:27:24,266 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - Network profit excecution time: 0:02:57.346793
+2022-04-20 09:27:24,267 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - ==== End network profit module ====

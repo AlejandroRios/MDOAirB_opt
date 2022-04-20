@@ -1,0 +1,8 @@
+======== Aircraft parameters ========
+
+
+ ----- Aircraft parameters ----- 
+[17.45456543 12.67322407 24.57544027]
+
+ ----- Error message ----- 
+<class 'FileNotFoundError'>

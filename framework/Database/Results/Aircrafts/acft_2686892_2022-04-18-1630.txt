@@ -1,0 +1,208 @@
+======== Aircraft and network optimization results ========
+
+Individual variables: 
+[29 13 12]
+
+ ----- Aircraft parameters ----- 
+Operational Empty Weight: 15583.37 [kg] 
+Maximum Takeoff Weight: 24005.00 [kg] 
+Maximum Landing Weight: 22013.88 [kg] 
+Maximum Zero Fuel Weight: 21573.60 [kg] 
+Maximum Fuel Weight: 6042.22 [kg] 
+
+ Performance: 
+RANGE: 1096.72 [nm] 
+MMO: 0.82
+VMO: 340.00 [kts] 
+Ceiling: 41000.00 [ft] 
+
+ Fuselage: 
+Pax: 40.17
+Crew: 5.00
+Aisles number: 1.00
+Seats number: 4.18
+Seat width: 0.46 [m] 
+Seat pitch: 0.81 [m] 
+Cabine height: 2.00 [m] 
+Fuselage length: 21.26 [m] 
+Cockpit length: 3.70 [m] 
+Tail length: 5.46 [m] 
+Width: 3.03 [m] 
+Diameter: 3.17 [m] 
+Height: 3.32 [m] 
+Dz floor: 0.73 [m] 
+Wetted area: 173.05 [m2] 
+Weight: [2987.09456876] [kg] 
+
+ Aerodynamics: 
+CLmax: 1.65
+CLmax TO: 2.16
+CLmax LD: 2.76
+
+ Wing: 
+Area: 72.01 [m2] 
+Span: 28.07 [m] 
+Aspect Ratio: 10.56
+Taper Ratio: 0.21
+Sweep c/4: 24.43 [deg] 
+Sweep LE: 27.16 [deg] 
+Twist: -4.19 [deg] 
+Wetted area: 126.71 [m2] 
+Kink position: 0.31 [%] 
+Root incidence: 2.00 [deg] 
+Kink incidence: 0.00 [deg] 
+Tip incidence: -2.19 [deg] 
+Root t/c: 0.13
+Kink t/c: 0.11
+Tip t/c: 0.10
+Center chord: 5.41 [m] 
+Root chord: 4.60 [m] 
+Kink chord: 3.20 [m] 
+Tip chord: 0.92 [m] 
+MAC: 3.04 [m] 
+Leading edge xposition: [7.02530226] [m] 
+Slat presence: 1.00
+Flap span: 0.75 [%] 
+Flap area: 3.77 [m2] 
+Flap def. TO: 35.00 [deg] 
+Flap def. LD: 45.00 [deg] 
+Aileron position: 0.00 [%] 
+Rear spar position: 0.75 [%] 
+
+ Vertical tail: 
+Area: [22.61899829] [m2] 
+Aspect Ratio: 1.20
+Taper Ratio: 0.50
+Sweep c/4: 41.00 [deg] 
+
+ Horizontal tail: 
+Area: [22.48077525] [m2] 
+Aspect Ratio: 4.35
+Taper Ratio: 0.40
+Sweep c/4: 28.43 [deg] 
+
+ Winglet: 
+Aspect Ratio: 2.75
+Taper Ratio: 0.25
+Sweep leading edge: 35.00 [deg] 
+
+ Engine: 
+Engine type: 1
+Maximum thrust: [91070.11496593] [N] 
+Bypass ratio: 5.00
+Fan diameter: 1.00 [m] 
+Fan pressure ratio: 1.46
+Compressor pressure ratio: 28.50
+Turbine inlet temperature: 1450.00 [deg C] 
+Engine length: 2.18 [m] 
+
+ Pylon: 
+Wetted area: 1.93 [m2] 
+
+ Aircraft: 
+Wing position: 1.00
+Horizontal tail position: 1.00
+Engine position: 1.00
+Wetted area: [406.13503467] [m2] 
+
+ ----- Network parameters ----- 
+Number of nodes: 15.00 
+Number of arcs: 25.00 
+Average degree of nodes: 1.67 
+Average path length: 689.28 
+Network density: 0.12 
+Average clustering: 0.21
+
+Referemce values: 
+
+Daily demand: 
+0 451 294 252 313 298 192 221 324 188 200 105 152 256 125
+451 0 342 469 398 215 254 505 227 322 244 47 222 279 15
+294 342 0 334 300 374 354 204 255 192 180 0 134 243 97
+252 469 334 0 307 374 291 327 255 256 238 5 189 229 62
+313 398 300 307 0 697 340 150 150 183 53 0 40 109 28
+298 215 374 374 697 0 384 164 175 171 74 81 90 104 76
+192 254 354 291 340 384 0 55 144 99 60 30 73 102 46
+221 505 204 327 150 164 55 0 63 78 41 0 29 52 6
+324 227 255 255 150 175 144 63 0 260 68 46 53 121 91
+188 322 192 256 183 171 99 78 260 0 105 52 57 104 30
+200 244 180 238 53 74 60 41 68 105 0 0 345 82 36
+105 47 0 5 0 81 30 0 46 52 0 0 0 10 0
+152 222 134 189 40 90 73 29 53 57 345 0 0 53 16
+256 279 243 229 109 104 102 52 121 104 82 10 53 0 159
+125 15 97 62 28 76 46 6 91 30 36 0 16 159 0
+
+Distances: 
+0 354 242 198 768 591 517 587 335 154 660 1105 830 1006 855
+354 0 187 200 673 620 780 243 688 426 790 1374 998 1357 1180
+242 187 0 215 575 464 594 424 559 257 831 1340 1023 1207 1097
+198 200 215 0 789 670 700 405 518 326 622 1176 821 1193 982
+768 673 575 789 0 261 718 785 975 670 1405 1856 1591 1465 1551
+591 620 464 670 261 0 457 802 740 462 1250 1635 1419 1205 1312
+517 780 594 700 718 457 0 1018 421 375 1092 1293 1206 747 927
+587 243 424 405 785 802 1018 0 919 668 877 1522 1092 1592 1374
+335 688 559 518 975 740 421 919 0 326 695 901 788 675 576
+154 426 257 326 670 462 375 668 326 0 803 1186 960 951 895
+660 790 831 622 1405 1250 1092 877 695 803 0 689 215 1193 713
+1105 1374 1340 1176 1856 1635 1293 1522 901 1186 689 0 506 938 396
+830 998 1023 821 1591 1419 1206 1092 788 960 215 506 0 1170 632
+1006 1357 1207 1193 1465 1205 747 1592 675 951 1193 938 1170 0 569
+855 1180 1097 982 1551 1312 927 1374 576 895 713 396 632 569 0
+
+Headings: 
+
+DOC: 
+FRA,{'FRA': 0, 'LHR': 2784, 'CDG': 2115, 'AMS': 1857, 'MAD': 5356, 'BCN': 4253, 'FCO': 3942, 'DUB': 4516, 'VIE': 2678, 'ZRH': 1598, 'ARN': 5076, 'DME': 10000000000.0, 'HEL': 6320, 'IST': 7567, 'KBP': 6457}
+
+LHR,{'FRA': 2791, 'LHR': 0, 'CDG': 1793, 'AMS': 1873, 'MAD': 5135, 'BCN': 4788, 'FCO': 5956, 'DUB': 2143, 'VIE': 5283, 'ZRH': 3234, 'ARN': 6029, 'DME': 10000000000.0, 'HEL': 7511, 'IST': 10000000000.0, 'KBP': 10000000000.0}
+
+CDG,{'FRA': 2121, 'LHR': 1793, 'CDG': 0, 'AMS': 1958, 'MAD': 4152, 'BCN': 3464, 'FCO': 4594, 'DUB': 3216, 'VIE': 4341, 'ZRH': 2207, 'ARN': 6327, 'DME': 0, 'HEL': 7692, 'IST': 10000000000.0, 'KBP': 10000000000.0}
+
+AMS,{'FRA': 1862, 'LHR': 1872, 'CDG': 1967, 'AMS': 0, 'MAD': 5498, 'BCN': 5114, 'FCO': 5371, 'DUB': 3099, 'VIE': 4050, 'ZRH': 2626, 'ARN': 4803, 'DME': 10000000000.0, 'HEL': 6258, 'IST': 10000000000.0, 'KBP': 7394}
+
+MAD,{'FRA': 5848, 'LHR': 5151, 'CDG': 4441, 'AMS': 6003, 'MAD': 0, 'BCN': 2221, 'FCO': 5480, 'DUB': 5447, 'VIE': 7321, 'ZRH': 5130, 'ARN': 10000000000.0, 'DME': 0, 'HEL': 10000000000.0, 'IST': 10000000000.0, 'KBP': 10000000000.0}
+
+BCN,{'FRA': 4575, 'LHR': 4439, 'CDG': 3465, 'AMS': 5152, 'MAD': 2235, 'BCN': 0, 'FCO': 3423, 'DUB': 5575, 'VIE': 5663, 'ZRH': 3453, 'ARN': 10000000000.0, 'DME': 10000000000.0, 'HEL': 10000000000.0, 'IST': 10000000000.0, 'KBP': 10000000000.0}
+
+FCO,{'FRA': 3795, 'LHR': 5441, 'CDG': 4270, 'AMS': 5333, 'MAD': 5463, 'BCN': 3424, 'FCO': 0, 'DUB': 6969, 'VIE': 3204, 'ZRH': 2916, 'ARN': 8208, 'DME': 10000000000.0, 'HEL': 10000000000.0, 'IST': 5714, 'KBP': 6990}
+
+DUB,{'FRA': 4545, 'LHR': 2127, 'CDG': 3218, 'AMS': 3098, 'MAD': 5991, 'BCN': 6116, 'FCO': 7657, 'DUB': 0, 'VIE': 6929, 'ZRH': 5135, 'ARN': 6621, 'DME': 0, 'HEL': 8205, 'IST': 10000000000.0, 'KBP': 10000000000.0}
+
+VIE,{'FRA': 2670, 'LHR': 5238, 'CDG': 4052, 'AMS': 3795, 'MAD': 6687, 'BCN': 5176, 'FCO': 3200, 'DUB': 6319, 'VIE': 0, 'ZRH': 2616, 'ARN': 5328, 'DME': 6793, 'HEL': 6009, 'IST': 5183, 'KBP': 4462}
+
+ZRH,{'FRA': 1595, 'LHR': 3215, 'CDG': 2194, 'AMS': 2608, 'MAD': 4736, 'BCN': 3445, 'FCO': 2903, 'DUB': 4723, 'VIE': 2611, 'ZRH': 0, 'ARN': 6111, 'DME': 10000000000.0, 'HEL': 7217, 'IST': 7151, 'KBP': 6740}
+
+ARN,{'FRA': 4689, 'LHR': 5497, 'CDG': 5767, 'AMS': 4451, 'MAD': 10000000000.0, 'BCN': 10000000000.0, 'FCO': 8133, 'DUB': 6062, 'VIE': 5293, 'ZRH': 5580, 'ARN': 0, 'DME': 0, 'HEL': 1957, 'IST': 10000000000.0, 'KBP': 5465}
+
+DME,{'FRA': 10000000000.0, 'LHR': 10000000000.0, 'CDG': 0, 'AMS': 10000000000.0, 'MAD': 0, 'BCN': 10000000000.0, 'FCO': 10000000000.0, 'DUB': 0, 'VIE': 6202, 'ZRH': 10000000000.0, 'ARN': 0, 'DME': 0, 'HEL': 0, 'IST': 6441, 'KBP': 0}
+
+HEL,{'FRA': 5761, 'LHR': 6837, 'CDG': 6998, 'AMS': 5703, 'MAD': 10000000000.0, 'BCN': 10000000000.0, 'FCO': 10000000000.0, 'DUB': 7446, 'VIE': 5484, 'ZRH': 6588, 'ARN': 1958, 'DME': 0, 'HEL': 0, 'IST': 10000000000.0, 'KBP': 4874}
+
+IST,{'FRA': 6889, 'LHR': 10000000000.0, 'CDG': 10000000000.0, 'AMS': 10000000000.0, 'MAD': 10000000000.0, 'BCN': 10000000000.0, 'FCO': 5223, 'DUB': 10000000000.0, 'VIE': 5147, 'ZRH': 6528, 'ARN': 10000000000.0, 'DME': 7067, 'HEL': 10000000000.0, 'IST': 0, 'KBP': 4414}
+
+KBP,{'FRA': 5917, 'LHR': 10000000000.0, 'CDG': 10000000000.0, 'AMS': 6730, 'MAD': 10000000000.0, 'BCN': 10000000000.0, 'FCO': 6372, 'DUB': 10000000000.0, 'VIE': 4154, 'ZRH': 6164, 'ARN': 5420, 'DME': 0, 'HEL': 4510, 'IST': 4117, 'KBP': 0}
+
+
+
+Frequencies: 
+{('FRA', 'FRA'): 0.0, ('FRA', 'LHR'): 0.0, ('FRA', 'CDG'): 1.0, ('FRA', 'AMS'): 0.0, ('FRA', 'MAD'): 0.0, ('FRA', 'BCN'): 0.0, ('FRA', 'FCO'): 11.0, ('FRA', 'DUB'): 0.0, ('FRA', 'VIE'): 10.0, ('FRA', 'ZRH'): 16.0, ('FRA', 'ARN'): 1.0, ('FRA', 'DME'): 0.0, ('FRA', 'HEL'): 0.0, ('FRA', 'IST'): 0.0, ('FRA', 'KBP'): 0.0, ('LHR', 'FRA'): 0.0, ('LHR', 'LHR'): 0.0, ('LHR', 'CDG'): 9.0, ('LHR', 'AMS'): 5.0, ('LHR', 'MAD'): 0.0, ('LHR', 'BCN'): 3.0, ('LHR', 'FCO'): 0.0, ('LHR', 'DUB'): 20.0, ('LHR', 'VIE'): 0.0, ('LHR', 'ZRH'): 0.0, ('LHR', 'ARN'): 0.0, ('LHR', 'DME'): 0.0, ('LHR', 'HEL'): 0.0, ('LHR', 'IST'): 0.0, ('LHR', 'KBP'): 0.0, ('CDG', 'FRA'): 0.0, ('CDG', 'LHR'): 12.0, ('CDG', 'CDG'): 0.0, ('CDG', 'AMS'): 0.0, ('CDG', 'MAD'): 0.0, ('CDG', 'BCN'): 1.0, ('CDG', 'FCO'): 2.0, ('CDG', 'DUB'): 0.0, ('CDG', 'VIE'): 0.0, ('CDG', 'ZRH'): 0.0, ('CDG', 'ARN'): 0.0, ('CDG', 'DME'): 30.0, ('CDG', 'HEL'): 0.0, ('CDG', 'IST'): 0.0, ('CDG', 'KBP'): 0.0, ('AMS', 'FRA'): 3.0, ('AMS', 'LHR'): 5.0, ('AMS', 'CDG'): 0.0, ('AMS', 'AMS'): 0.0, ('AMS', 'MAD'): 0.0, ('AMS', 'BCN'): 0.0, ('AMS', 'FCO'): 0.0, ('AMS', 'DUB'): 10.0, ('AMS', 'VIE'): 0.0, ('AMS', 'ZRH'): 3.0, ('AMS', 'ARN'): 8.0, ('AMS', 'DME'): 0.0, ('AMS', 'HEL'): 0.0, ('AMS', 'IST'): 0.0, ('AMS', 'KBP'): 0.0, ('MAD', 'FRA'): 0.0, ('MAD', 'LHR'): 0.0, ('MAD', 'CDG'): 0.0, ('MAD', 'AMS'): 0.0, ('MAD', 'MAD'): 0.0, ('MAD', 'BCN'): 4.0, ('MAD', 'FCO'): 0.0, ('MAD', 'DUB'): 0.0, ('MAD', 'VIE'): 0.0, ('MAD', 'ZRH'): 0.0, ('MAD', 'ARN'): 0.0, ('MAD', 'DME'): 30.0, ('MAD', 'HEL'): 0.0, ('MAD', 'IST'): 0.0, ('MAD', 'KBP'): 0.0, ('BCN', 'FRA'): 0.0, ('BCN', 'LHR'): 0.0, ('BCN', 'CDG'): 3.0, ('BCN', 'AMS'): 0.0, ('BCN', 'MAD'): 4.0, ('BCN', 'BCN'): 0.0, ('BCN', 'FCO'): 0.0, ('BCN', 'DUB'): 0.0, ('BCN', 'VIE'): 0.0, ('BCN', 'ZRH'): 0.0, ('BCN', 'ARN'): 0.0, ('BCN', 'DME'): 0.0, ('BCN', 'HEL'): 0.0, ('BCN', 'IST'): 0.0, ('BCN', 'KBP'): 0.0, ('FCO', 'FRA'): 11.0, ('FCO', 'LHR'): 0.0, ('FCO', 'CDG'): 0.0, ('FCO', 'AMS'): 2.0, ('FCO', 'MAD'): 0.0, ('FCO', 'BCN'): 0.0, ('FCO', 'FCO'): 0.0, ('FCO', 'DUB'): 0.0, ('FCO', 'VIE'): 0.0, ('FCO', 'ZRH'): 0.0, ('FCO', 'ARN'): 0.0, ('FCO', 'DME'): 0.0, ('FCO', 'HEL'): 0.0, ('FCO', 'IST'): 0.0, ('FCO', 'KBP'): 0.0, ('DUB', 'FRA'): 0.0, ('DUB', 'LHR'): 17.0, ('DUB', 'CDG'): 0.0, ('DUB', 'AMS'): 9.0, ('DUB', 'MAD'): 0.0, ('DUB', 'BCN'): 0.0, ('DUB', 'FCO'): 0.0, ('DUB', 'DUB'): 0.0, ('DUB', 'VIE'): 0.0, ('DUB', 'ZRH'): 0.0, ('DUB', 'ARN'): 0.0, ('DUB', 'DME'): 30.0, ('DUB', 'HEL'): 0.0, ('DUB', 'IST'): 0.0, ('DUB', 'KBP'): 0.0, ('VIE', 'FRA'): 10.0, ('VIE', 'LHR'): 0.0, ('VIE', 'CDG'): 0.0, ('VIE', 'AMS'): 0.0, ('VIE', 'MAD'): 0.0, ('VIE', 'BCN'): 0.0, ('VIE', 'FCO'): 0.0, ('VIE', 'DUB'): 0.0, ('VIE', 'VIE'): 0.0, ('VIE', 'ZRH'): 0.0, ('VIE', 'ARN'): 0.0, ('VIE', 'DME'): 0.0, ('VIE', 'HEL'): 0.0, ('VIE', 'IST'): 1.0, ('VIE', 'KBP'): 0.0, ('ZRH', 'FRA'): 13.0, ('ZRH', 'LHR'): 0.0, ('ZRH', 'CDG'): 0.0, ('ZRH', 'AMS'): 1.0, ('ZRH', 'MAD'): 0.0, ('ZRH', 'BCN'): 0.0, ('ZRH', 'FCO'): 0.0, ('ZRH', 'DUB'): 0.0, ('ZRH', 'VIE'): 0.0, ('ZRH', 'ZRH'): 0.0, ('ZRH', 'ARN'): 0.0, ('ZRH', 'DME'): 0.0, ('ZRH', 'HEL'): 0.0, ('ZRH', 'IST'): 0.0, ('ZRH', 'KBP'): 0.0, ('ARN', 'FRA'): 0.0, ('ARN', 'LHR'): 0.0, ('ARN', 'CDG'): 0.0, ('ARN', 'AMS'): 9.0, ('ARN', 'MAD'): 0.0, ('ARN', 'BCN'): 0.0, ('ARN', 'FCO'): 0.0, ('ARN', 'DUB'): 0.0, ('ARN', 'VIE'): 0.0, ('ARN', 'ZRH'): 0.0, ('ARN', 'ARN'): 0.0, ('ARN', 'DME'): 30.0, ('ARN', 'HEL'): 0.0, ('ARN', 'IST'): 0.0, ('ARN', 'KBP'): 0.0, ('DME', 'FRA'): 0.0, ('DME', 'LHR'): 0.0, ('DME', 'CDG'): 30.0, ('DME', 'AMS'): 0.0, ('DME', 'MAD'): 30.0, ('DME', 'BCN'): 0.0, ('DME', 'FCO'): 0.0, ('DME', 'DUB'): 30.0, ('DME', 'VIE'): 0.0, ('DME', 'ZRH'): 0.0, ('DME', 'ARN'): 30.0, ('DME', 'DME'): 0.0, ('DME', 'HEL'): 30.0, ('DME', 'IST'): 6.0, ('DME', 'KBP'): 30.0, ('HEL', 'FRA'): 0.0, ('HEL', 'LHR'): 0.0, ('HEL', 'CDG'): 0.0, ('HEL', 'AMS'): 0.0, ('HEL', 'MAD'): 0.0, ('HEL', 'BCN'): 0.0, ('HEL', 'FCO'): 0.0, ('HEL', 'DUB'): 0.0, ('HEL', 'VIE'): 0.0, ('HEL', 'ZRH'): 0.0, ('HEL', 'ARN'): 0.0, ('HEL', 'DME'): 30.0, ('HEL', 'HEL'): 0.0, ('HEL', 'IST'): 10.0, ('HEL', 'KBP'): 0.0, ('IST', 'FRA'): 0.0, ('IST', 'LHR'): 0.0, ('IST', 'CDG'): 0.0, ('IST', 'AMS'): 0.0, ('IST', 'MAD'): 0.0, ('IST', 'BCN'): 0.0, ('IST', 'FCO'): 0.0, ('IST', 'DUB'): 0.0, ('IST', 'VIE'): 1.0, ('IST', 'ZRH'): 0.0, ('IST', 'ARN'): 0.0, ('IST', 'DME'): 6.0, ('IST', 'HEL'): 10.0, ('IST', 'IST'): 0.0, ('IST', 'KBP'): 0.0, ('KBP', 'FRA'): 0.0, ('KBP', 'LHR'): 0.0, ('KBP', 'CDG'): 0.0, ('KBP', 'AMS'): 0.0, ('KBP', 'MAD'): 0.0, ('KBP', 'BCN'): 0.0, ('KBP', 'FCO'): 0.0, ('KBP', 'DUB'): 0.0, ('KBP', 'VIE'): 0.0, ('KBP', 'ZRH'): 0.0, ('KBP', 'ARN'): 0.0, ('KBP', 'DME'): 30.0, ('KBP', 'HEL'): 0.0, ('KBP', 'IST'): 0.0, ('KBP', 'KBP'): 0.0}
+
+Network Results: 
+Average Cruise Mach: 0.29 
+Total fuel [kg]: 118833.85 
+Total CO2 [kg]: 374326.64 
+CO2 efficiency [kg/pax.nm]: 0.00004224 
+Average CEMV [kg/nm]: inf 
+Total distance [nm]: 134820.00 
+Total pax: 35490.00 
+Total cost [$]: 1309923.00 
+Total revenue [$]: 4258800.00 
+Total profit [$]: 2686892.00 
+Margin percent [%]: 63.09 
+Average DOC [$/nm]: 7.66 
+NRASK [$/pax.nm]x1E-4: 9.79 
+NCASK [$/pax.nm]x1E-4: 3.29 
+NP [$/pax.nm]x1E-4: 6.51 
+Number of frequencies: 597.00 
+Number of used aircraft: 31.00 
+Sectors per aircraft: 19.26 

@@ -1,0 +1,11 @@
+======== Aircraft parameters ========
+
+
+ ----- Aircraft parameters ----- 
+[ 161.18953227   72.19266066   29.57320293   26.51884043   -3.86126776
+   39.8474948   217.36379151    5.02595101 2816.14490531    4.81131431]
+
+ ----- Flags ----- 
+
+ landing, takeoff, climb second segment, missed approach, cruise, fuel, noise 
+[1, 0, 0, 0, 0, 0, 1]
