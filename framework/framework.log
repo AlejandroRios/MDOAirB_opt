@@ -1,49 +1,11 @@
-2022-04-20 09:27:21,136 - c:\users\aarc8\documents\github\mdoairb_base\framework\Network\network_optimization     - INFO - ==== Start network optimization module ====
-
-22022-04-20 09:27:21,133 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - Aircraft passed sizing and checks status: 0
-2022-04-20 09:27:21,133 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - ---- Start DOC matrix calculation ----
-2022-04-20 09:27:21,134 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< DOC matrix generation
-Traceback (most recent call last):
-  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 160, in objective_function0
-    ][airports_keys[k]], SAR[airports_keys[i]][airports_keys[k]] = mission(vehicle, airport_departure, takeoff_runway, airport_destination, landing_runway, mission_range)
-TypeError: mission() takes 4 positional arguments but 6 were given
-2022-04-20 09:27:21,136 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - Aircraft DOC matrix: {'FRA': {'FRA': 0, 'LHR': 0}}
-2022-04-20 09:27:21,136 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - ---- Start Network Optimization ----
-2022-04-20 09:27:21,136 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< network_optimization
-Traceback (most recent call last):
-  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 193, in objective_function0
-    computation_mode, list(airports.keys()), distances, demands, DOC_ik, vehicle)
-  File "c:\users\aarc8\documents\github\mdoairb_base\framework\Network\network_optimization.py", line 119, in network_optimization
-    docs_list.append(doc0[airports_keys[i]][airports_keys[j]])
-KeyError: 'CDG'
-2022-04-20 09:27:21,138 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - Network profit [$USD]: 0
-2022-04-20 09:27:21,143 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< writting dataframes
-Traceback (most recent call last):
-  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 245, in objective_function0
-    kpi_df3['mach'] = mach_df['mach'].values
-  File "C:\Users\aarc8\anaconda3\envs\MDOAirB_base\lib\site-packages\pandas\core\frame.py", line 3044, in __setitem__
-    self._set_item(key, value)
-  File "C:\Users\aarc8\anaconda3\envs\MDOAirB_base\lib\site-packages\pandas\core\frame.py", line 3120, in _set_item
-    value = self._sanitize_column(key, value)
-  File "C:\Users\aarc8\anaconda3\envs\MDOAirB_base\lib\site-packages\pandas\core\frame.py", line 3768, in _sanitize_column
-    value = sanitize_index(value, self.index)
-  File "C:\Users\aarc8\anaconda3\envs\MDOAirB_base\lib\site-packages\pandas\core\internals\construction.py", line 748, in sanitize_index
-    "Length of values "
-ValueError: Length of values (2) does not match length of index (225)
-2022-04-20 09:27:24,264 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< write_optimal_results
-Traceback (most recent call last):
-  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 293, in objective_function0
-    )), distances, demands, profit, DOC_ik, vehicle, kpi_df2, airplanes_ik)
-UnboundLocalError: local variable 'kpi_df2' referenced before assignment
-2022-04-20 09:27:24,265 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< write_kml_results
-Traceback (most recent call last):
-  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 299, in objective_function0
-    write_kml_results(airports, profit, airplanes_ik)
-UnboundLocalError: local variable 'airplanes_ik' referenced before assignment
-2022-04-20 09:27:24,266 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - ERROR - >>>>>>>>>> Error at <<<<<<<<<<<< write_newtork_results
-Traceback (most recent call last):
-  File "c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real.py", line 305, in objective_function0
-    write_newtork_results(profit, kpi_df1, kpi_df2)
-UnboundLocalError: local variable 'kpi_df1' referenced before assignment
-2022-04-20 09:27:24,266 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - Network profit excecution time: 0:02:57.346793
-2022-04-20 09:27:24,267 - c:\Users\aarc8\Documents\github\MDOAirB_base\framework\Optimization\objective_function_real     - INFO - ==== End network profit module ====
+2022-04-20 14:43:33,096 - c:\users\aarc8\documents\github\mdoairb_opt\framework\utilities\output     - INFO - ==== Start writing aircraft results ====
+2022-04-20 14:43:33,104 - c:\users\aarc8\documents\github\mdoairb_opt\framework\utilities\output     - INFO - ==== End writing aircraft results ====
+2022-04-20 14:43:33,104 - c:\users\aarc8\documents\github\mdoairb_opt\framework\utilities\output     - INFO - ==== Start writing klm results ====
+2022-04-20 14:43:33,105 - c:\users\aarc8\documents\github\mdoairb_opt\framework\utilities\output     - INFO - ==== End writing klm results ====
+ly_network_optimization     - INFO - Network optimization status: Optimal
+2022-04-20 14:43:33,085 - c:\users\aarc8\documents\github\mdoairb_opt\framework\Network\family_network_optimization     - INFO - ==== End network optimization module ====
+ 5817, 'IST': 6522, 'KBP': 5927}, 'LHR': {'FRA': 3109, 'LHR': 0, 'CDG': 2139, 'AMS': 2226, 'MAD': 5178, 'BCN': 4797, 'FCO': 5676, 'DUB': 2460, 'VIE': 5231, 'ZRH': 3573, 'ARN': 5668, 'DME': 8572, 'HEL': 6514, 'IST': 8416, 'KBP': 7432}, 'CDG': {'FRA': 2443, 'LHR': 2139, 'CDG': 0, 'AMS': 2303, 'MAD': 4480, 'BCN': 3783, 'FCO': 4615, 'DUB': 3535, 'VIE': 4393, 'ZRH': 2518, 'ARN': 5823, 'DME': 0, 'HEL': 6599, 'IST': 7565, 'KBP': 6984}, 'AMS': {'FRA': 2213, 'LHR': 2231, 'CDG': 2311, 'AMS': 0, 'MAD': 5679, 'BCN': 5147, 'FCO': 5289, 'DUB': 3419, 'VIE': 4132, 'ZRH': 2940, 'ARN': 4798, 'DME': 7401, 'HEL': 5834, 'IST': 7487, 'KBP': 6419}, 'MAD': {'FRA': 5592, 'LHR': 5085, 'CDG': 4475, 'AMS': 5665, 'MAD': 0, 'BCN': 2524, 'FCO': 5372, 'DUB': 5633, 'VIE': 6392, 'ZRH': 5064, 'ARN': 8714, 'DME': 0, 'HEL': 10000000000.0, 'IST': 10000000000.0, 'KBP': 10000000000.0}, 'BCN': {'FRA': 4617, 'LHR': 4770, 'CDG': 3815, 'AMS': 5118, 'MAD': 2551, 'BCN': 0, 'FCO': 3770, 'DUB': 5739, 'VIE': 5514, 'ZRH': 3802, 'ARN': 7799, 'DME': 10000000000.0, 'HEL': 8861, 'IST': 7564, 'KBP': 8154}, 'FCO': {'FRA': 4102, 'LHR': 5621, 'CDG': 4607, 'AMS': 5346, 'MAD': 5460, 'BCN': 3743, 'FCO': 0, 'DUB': 6632, 'VIE': 3526, 'ZRH': 3238, 'ARN': 6964, 'DME': 8061, 'HEL': 7559, 'IST': 5533, 'KBP': 6236}, 'DUB': {'FRA': 4588, 'LHR': 2450, 'CDG': 3543, 'AMS': 3438, 'MAD': 5672, 'BCN': 5734, 'FCO': 6578, 'DUB': 0, 'VIE': 6195, 'ZRH': 5081, 'ARN': 6031, 'DME': 0, 'HEL': 6935, 'IST': 10000000000.0, 'KBP': 8546}, 'VIE': {'FRA': 2986, 'LHR': 5269, 'CDG': 4367, 'AMS': 4114, 'MAD': 6426, 'BCN': 5466, 'FCO': 3514, 'DUB': 6171, 'VIE': 0, 'ZRH': 2932, 'ARN': 5245, 'DME': 6107, 'HEL': 5694, 'IST': 5119, 'KBP': 4519}, 'ZRH': {'FRA': 1898, 'LHR': 3533, 'CDG': 2516, 'AMS': 2922, 'MAD': 5058, 'BCN': 3754, 'FCO': 3227, 'DUB': 5041, 'VIE': 2933, 'ZRH': 0, 'ARN': 5752, 'DME': 7418, 'HEL': 6320, 'IST': 6346, 'KBP': 6085}, 'ARN': {'FRA': 5024, 'LHR': 5683, 'CDG': 5845, 'AMS': 4778, 'MAD': 8943, 'BCN': 7895, 'FCO': 7022, 'DUB': 6047, 'VIE': 5307, 'ZRH': 5733, 'ARN': 0, 'DME': 0, 'HEL': 2293, 'IST': 7491, 'KBP': 5370}, 'DME': {'FRA': 7084, 'LHR': 8702, 'CDG': 0, 'AMS': 7480, 'MAD': 0, 'BCN': 10000000000.0, 'FCO': 8183, 'DUB': 0, 'VIE': 6101, 'ZRH': 7526, 'ARN': 0, 'DME': 0, 'HEL': 0, 'IST': 6254, 'KBP': 0}, 'HEL': {'FRA': 5840, 'LHR': 6532, 'CDG': 6659, 'AMS': 5812, 'MAD': 10000000000.0, 'BCN': 8969, 'FCO': 7642, 'DUB': 7022, 'VIE': 5669, 'ZRH': 6360, 'ARN': 2311, 'DME': 0, 'HEL': 0, 'IST': 7356, 'KBP': 4860}, 'IST': {'FRA': 6585, 'LHR': 8612, 'CDG': 7656, 'AMS': 7591, 'MAD': 10000000000.0, 'BCN': 7630, 'FCO': 5516, 'DUB': 10000000000.0, 'VIE': 5187, 'ZRH': 6317, 'ARN': 7591, 'DME': 6301, 'HEL': 7457, 'IST': 0, 'KBP': 4451}, 'KBP': {'FRA': 5960, 'LHR': 7502, 'CDG': 7048, 'AMS': 6461, 'MAD': 10000000000.0, 'BCN': 8295, 'FCO': 6220, 'DUB': 8703, 'VIE': 4484, 'ZRH': 6051, 'ARN': 5421, 'DME': 0, 'HEL': 4849, 'IST': 4440, 'KBP': 0}}
+2022-04-20 14:38:31,718 - c:\Users\aarc8\Documents\github\MDOAirB_opt\framework\Optimization\aircraft_family_objective     - INFO - ---- Start Network Optimization ----
+2022-04-20 14:43:33,086 - c:\Users\aarc8\Documents\github\MDOAirB_opt\framework\Optimization\aircraft_family_objective     - INFO - Network profit [$USD]: 3005640
+2022-04-20 14:43:33,110 - c:\Users\aarc8\Documents\github\MDOAirB_opt\framework\Optimization\aircraft_family_objective     - INFO - Network profit excecution time: 0:05:01.398388
+2022-04-20 14:43:33,110 - c:\Users\aarc8\Documents\github\MDOAirB_opt\framework\Optimization\aircraft_family_objective     - INFO - ==== End network profit module ====

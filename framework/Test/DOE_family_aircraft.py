@@ -79,6 +79,8 @@ def objective_function(args):
     airports= args[4]
     distances= args[5]
     demands = args[6]
+
+    print(demands)
     index= args[7]
 
     log.info('==== Start network profit module ====')

@@ -429,8 +429,25 @@ def family_network_optimization(computation_mode, airports_keys, acft1, acft2, a
     for i in range(len(airports_keys)):
         for j in range(len(airports_keys)):
             list_of_airplanes_processed[i][j]= aircrafts1[i][j] +aircrafts2[i][j] + aircrafts3[i][j]
+            
 
+    # print('Aircraft3 matrix:',aircrafts3)
+    # print('===============================')
     # print('Aircraft matrix:',list_of_airplanes_processed)
+    # print('===============================')
+    # print('Aircraft1 matrix:',aircrafts1)
+    # print('===============================')
+    # print('Aircraft2 matrix:',aircrafts2)
+    # print('===============================')
+    # print('Aircraft3 matrix:',aircrafts3)
+    # print('===============================')
+
+    # np.save('Database/Results_FamOpt/acft1', aircrafts1)
+    # np.save('Database/Results_FamOpt/acft2', aircrafts2)
+    # np.save('Database/Results_FamOpt/acft3', aircrafts3)
+
+
+
 
     # print('Aircraft matrix:',aircrafts1)
 

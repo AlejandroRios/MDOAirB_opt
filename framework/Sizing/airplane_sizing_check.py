@@ -54,7 +54,7 @@ from framework.Sizing.Geometry.wing_structural_layout_fuel_storage import \
 from framework.Sizing.performance_constraints import *
 from framework.utilities.logger import get_logger
 from framework.utilities.plot_simple_aircraft import plot3d
-from framework.utilities.plot_tigl_aircraft import plot3d_tigl
+# from framework.utilities.plot_tigl_aircraft import plot3d_tigl
 from joblib import dump, load
 
 # =============================================================================

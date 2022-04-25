@@ -27,7 +27,7 @@ import numpy as np
 # from scipy.integrate import ode
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
-from joblib import dump, load
+from joblib import  load
 from framework.Attributes.Airspeed.airspeed import V_cas_to_mach, mach_to_V_cas, crossover_altitude
 from framework.Attributes.Atmosphere.atmosphere_ISA_deviation import atmosphere_ISA_deviation
 from framework.Performance.Analysis.climb_acceleration import acceleration_to_250
